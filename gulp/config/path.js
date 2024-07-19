@@ -23,7 +23,7 @@ export const path = {
         files: `${srcFolder}/(img|style|)/*.*`,
     },
     watch: {
-        scripts: `${srcFolder}/scripts/*.js`,
+        scripts: `${srcFolder}/scripts/**/*.js`,
         html: `${srcFolder}/html/**/*.html`,
         img: `${srcFolder}/img/**/*.*`,
         svg: `${srcFolder}/img/**/*.svg`,

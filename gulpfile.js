@@ -15,7 +15,7 @@ import { fontsStyle, otf2ttf, ttf2woff, ttf2woff2 } from "./gulp/tasks/fonts.js"
 global.app = { gulp, path, plugins };
 
 const copy = gulp.parallel(img, svg, scss, javascript);
-const fonts = gulp.series(ttf2woff, ttf2woff2, fontsStyle)
+const fonts = gulp.series(ttf2woff, ttf2woff2, fontsStyle);
 const mainTasks = gulp.series(fonts, copy, html);
 
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watch, server));
